@@ -17,8 +17,36 @@ Performance of a Hybrid App is largely dependent on the WebView control as it re
 
 Apple recently introduced new WKWebView API in iOS 8 which leverages the Nitro Javascript JIT compiler used by Safari earlier. It will surely increase the performance of javascript execution in Hybrid Apps by more than 300% according to most of the benchmarks. Nitro compiles the Javascript into native code which makes it faster than the older UIWebView control. It will not have any effect on the UI Layer rendering and accessing hardware acceleration but still can affect the performance of apps using a lot of javascript execution.
 
+<a href="https://developer.apple.com/library/prerelease/ios/documentation/WebKit/Reference/WKWebView_Ref/">Click here to read API Reference for WKWebView</a>
+
 Google also had a separate WebView control in their native toolset which had different runtime engine from the Chromium open source browser till Android 4.4. From Android Kitkat 4.4, it announced that the WebView control will be based on the open source Chromium project. With the release of Android 5 Lollipop Google has released Updatable WebViews which would enable users to get updates for WebView independently directly from play store. This would be very helpful to receive performance enhancements and security upgrade patches.
 
 ## 4. Benefits of the latest WebView controls in IOS & Android 
 
 Hybrid Apps were seen as third class citizens in the mobile app community till now. But after all these updates, the performance of Hybrid Apps will be significantly better and we can envisage a future of single codebase for multiple platforms. The html5 developers would be able to create engaging user experiences on the mobile and for multiple screen sizes and device types.
+
+All the new exciting features that Hybrid Developers can leverage now are:
+* WebRTC*
+* WebGL
+* WebAudio
+* IndexedDB
+* Web Components*
+* Utilize Hardware Acceleration
+* Remote Debugging*
+
+*Certain Features are only available in Android Webview for now.
+
+## 5. How can you start using these right away ?
+
+You must be thinking that this is awesome, but how does it really affect me. If you want to use it directly you can use the native APIs if you are a native app developer. If you are a hybrid developer, you can use some third party libraries that enable you to use the latest web views in your apps.
+
+
+### Crosswalk Project
+
+<img src="https://crosswalk-project.org/assets/identity/crosswalkproject-logo-horizontal-dark.png" width="150px" >
+
+This is a new open source project promoted by Intel Corporation, which enables you to use the latest Chromium web runtime for your Android, Tizen and Cordova apps. This would enable developers to build amazing HTML5 games, WebRTC & Multimedia apps using web technologies. I have personally used this framework to develop a Video Chat hybrid app using WebRTC & PeerJS.
+
+If you want to discuss more about this topic, please tweet to me at <a href="http://twitter.com/mappmechanic">@mappmechanic</a>, or send me a linkedin message at <a href="http://linkedin.com/in/rahatkh">Rahat Khanna</a>
+
+
